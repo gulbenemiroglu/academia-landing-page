@@ -1,0 +1,635 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Thin-BETA.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-ThinItalic-BETA.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100;
+    
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-ExtraLight-BETA.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 200;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-ExtraLightItalic-BETA.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 200;
+    
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Light-BETA.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-LightItalic-BETA.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 300;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+   
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-MediumItalic.ttf') format('truetype');
+    font-style: italic ;
+    font-weight: 500;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-SemiBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-SemiBoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 600;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 700;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 800;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-ExtraBoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 800;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+    
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/fonts/Inter-BlackItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 900;
+    
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+ul, ul li{
+    list-style: none;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    --bs-gutter-x: 0rem;
+}
+.container-full{
+    max-width: 100vw
+}
+
+.container-full .row {
+    margin:0
+}
+
+
+.navbar{
+    padding-top:16px;
+    padding-bottom:16px ;
+}
+
+.dropdown-menu{
+    background-color: lightgray;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    border: none;
+}
+
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    border-radius: 100%;
+}
+
+
+
+.carousel-control-next-icon{
+    background-image: url('./assets/img/chevron-right.svg');
+}
+
+.carousel-control-prev-icon{
+    background-image: url('./assets/img/chevron-left.svg');
+}
+
+
+.card{
+    inline-size: max-content;
+}
+
+/* width */
+.container-fluid::-webkit-scrollbar {
+    width: 5vw;
+  }
+  
+  /* Track */
+  .container-fluid::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.05); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .container-fluid::-webkit-scrollbar-thumb {
+    
+    border-radius: 10px;
+    background:repeating-radial-gradient(transparent,rgba(128, 128, 128, 0.3))
+
+  }
+
+
+.accordion {
+   
+    --bs-accordion-border-color: none;
+    --bs-accordion-btn-color: white;
+    --bs-accordion-btn-bg: none;
+    --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+    --bs-accordion-btn-icon-width: 1.25rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+    --bs-accordion-btn-focus-border-color: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+  
+    --bs-accordion-active-color: white;
+}
+
+.accordion-item {
+    color:white;
+    background-color:unset;
+    border: none;
+    margin:16px 0px
+}
+
+.accordion-button, .accordion-button:active, .accordion-button:focus{
+   border:1px solid white;
+   border-radius: 16px;
+}
+
+.accordion-item:first-of-type .accordion-button, .accordion-item:last-of-type .accordion-button.collapsed  {
+    border-radius: 16px;}
+
+    .accordion-button.collapsed {
+        background: white
+      }
+      
+      .accordion-button.collapsed::after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+      }
+
+      .accordion-button:not(.collapsed)::after{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+      }
+      .accordion-left-img {
+        background-image: url(./assets/img/group-diverse-people-having-business-meeting1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  
+  
+/* xs */
+@media (min-width:0) and (max-width:575.98px){
+
+    h1 {
+        font-family:'Inter';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    h3{
+        font-weight: 600;
+    }
+    p{
+        font-family:'Inter';
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    strong{
+        font-weight: bold;
+    }
+    .h-img-100{
+        height: calc(50vh - 82px) !important;
+    }
+    .carousel-caption{
+        bottom:0;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 0;
+        width: 100%;
+        right: 0;
+        left:0;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        width:20%;
+        top: 10px;
+        align-items: unset;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        background-size: 1rem;
+        width: 2rem;
+        height: 2rem;
+        
+    }
+
+    .card{
+        max-width:inherit;
+    }
+    .info-carousel-right h1{
+        font-size:32px;
+    }
+
+    .info-carousel-right svg{
+        width:16px;
+        height: 16px;
+    }
+
+    
+    .horizontal-cards{
+        max-height:50vh ;
+    }
+
+    .horizontal-cards .card{
+        max-width: 160px;
+    }
+
+
+
+}
+/* sm */
+@media (min-width:576px) and (max-width:767.98px){
+    h1 {
+        font-family:'Inter';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    p{
+        font-family:'Inter';
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .h-img-100{
+        height: calc(50vh - 82px) !important;
+    }
+    .carousel-caption{
+        bottom:0;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 0;
+        width: 100%;
+        right: 0;
+        left:0;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        width:16%
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        background-size: 1rem;
+        width: 2rem;
+        height: 2rem;
+        
+    }
+
+ 
+    
+    .card{
+        max-width:400px;
+    }
+
+    .info-carousel-right h1{
+        font-size:32px;
+    }
+
+    .info-carousel-right svg{
+        width:16px;
+        height: 16px;
+    }
+
+    .horizontal-cards{
+        max-height:40vh ;
+    }
+
+    .horizontal-cards .card{
+        max-width: 240px;
+    }
+
+
+
+}
+
+/* md */
+@media (min-width:768px) and (max-width:991.98px){
+    h1 {
+        font-family:'Inter';
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    p{
+        font-family:'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .h-img-100{
+        height: calc(75vh - 82px) !important;
+    }
+    .carousel-caption{
+        top: 24vh;
+        bottom:unset;
+       
+    }
+    .carousel-control-next, .carousel-control-prev{
+        width:16%
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        background-size: 1rem;
+        width: 2rem;
+        height: 2rem;
+        
+    }
+
+    .card{
+        max-width:400px;
+    }
+
+    .info-carousel-right h1{
+        font-size:56px;
+    }
+
+    .info-carousel-right svg{
+        width:32px;
+        height: 32px;
+    }
+
+    .horizontal-cards{
+        max-height:50vh ;
+    }
+
+    .horizontal-cards .card{
+        max-width: 400px;
+    }
+
+}
+
+/* lg */
+@media (min-width:992px) and (max-width:1199.98px){
+    h1 {
+        font-family:'Inter';
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .h-img-100{
+        height: calc(100vh - 82px) !important;
+    }
+    .carousel-caption{
+        top: 32vh;
+        bottom:unset;
+       
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        width:16%
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        border: 3px solid rgba(0, 0, 0, 0.5);
+        background-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        
+    }
+    
+    .card{
+        max-width:400px;
+    }
+
+    .info-carousel-right h1{
+        font-size:80px;
+    }
+
+    .info-carousel-right svg{
+        width:40px;
+        height: 40px;
+    }
+
+    .horizontal-cards{
+        max-height:50vh ;
+    }
+
+    .horizontal-cards .card{
+        max-width: 400px;
+    }
+}
+
+/* xl */
+@media (min-width:1200px) and (max-width:1399.98px){
+    h1 {
+        font-family:'Inter';
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .h-img-100{
+        height: calc(100vh - 82px) !important;
+    }
+    .carousel-caption{
+        top: 32vh;
+        bottom:unset;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        width:16%
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        border: 3px solid rgba(0, 0, 0, 0.5);
+        background-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        
+    }
+
+    .card{
+        max-width:400px;
+    }
+
+    
+    .info-carousel-right h1{
+        font-size:80px;
+    }
+
+    .info-carousel-right svg{
+        width:40px;
+        height: 40px;
+    }
+    .horizontal-cards{
+        max-height:50vh ;
+    }
+
+    .horizontal-cards .card{
+        max-width: 400px;
+    }
+}
+/* xxl */
+@media (min-width:1400px) {
+    h1 {
+        font-family:'Inter';
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .h-img-100{
+        height: calc(100vh - 82px) !important;
+    }
+
+    .carousel-caption{
+        top: 32vh;
+        bottom:unset;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        width:16%
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        border: 3px solid rgba(0, 0, 0, 0.5);
+        background-size: 2rem;
+        width: 3rem;
+        height: 3rem;
+        
+    }
+
+    .card{
+        max-width:400px;
+    }
+
+    .info-carousel-right h1{
+        font-size:80px;
+    }
+
+    .info-carousel-right svg{
+        width:40px;
+        height: 40px;
+    }
+
+    .horizontal-cards{
+        max-height:50vh ;
+    }
+
+    .horizontal-cards .card{
+        max-width: 400px;
+    }
+}
+
+
+

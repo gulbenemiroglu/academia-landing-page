@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/academia-united-white.svg" alt="" height="40px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fw-light" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              style="color: white;">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Lorem</a></li>
+              <li><a class="dropdown-item" href="#">Lorem</a></li>
+              <li><a class="dropdown-item" href="#">Lorem</a></li>
+              <li><a class="dropdown-item" href="#">Lorem</a></li>
+              <li><a class="dropdown-item" href="#">Lorem</a></li>
+              <li><a class="dropdown-item" href="#">Lorem</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active fw-light" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-light" aria-current="page" href="#">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-light" aria-current="page" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <button class="btn btn-warning px-4" style="color: white;">Invest</button>
+      </div>
+    </div>
+  </nav>
+  <!-- carousel -->
+  <div class="container-fluid" style="padding-top:82px ;">
+    <div id="carouselExampleFade" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row align-items-center">
+            <div class="d-none d-md-block col-md-6 p-0">
+              <div class=" d-flex flex-column justify-content-center align-items-center h-img-100 bg-white"
+                style="padding-left:25% ; ">
+                <h1 class="my-lg-4  mb-md-3" style="align-self: start;">
+                  We help your
+                  brand to be
+                  recognizable
+                </h1>
+                <p class="my-lg-4  mb-md-3">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit neque sed hic perferendis distinctio
+                  quae ab possimus eos, consequatur, cumque voluptatem praesentium mollitia.
+                </p>
+                <button class="btn btn-dark my-lg-4" style="align-self: start;">Contact Us</button>
+              </div>
+            </div>
+            <div class="col p-0">
+              <img src="./assets/img/Group 1.png" class="d-block w-100 h-img-100 " alt="...">
+              <div class="carousel-caption d-block d-md-none">
+                <h1 class="my-2">
+                  We help your
+                  brand to be
+                  recognizable
+                </h1>
+                <p class="my-2">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit neque sed hic perferendis distinctio
+                  quae ab possimus eos, consequatur, cumque voluptatem praesentium mollitia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/happy-young-asian-businessmen-businesswomen-meeting-brainstorming-ideas-about-new-paperwork-project 1.png"
+            class="d-block w-100 h-img-100 " alt="...">
+          <div class="carousel-caption">
+            <h1 class="my-2 my-lg-4">
+              We help your
+              brand to be
+              recognizable
+            </h1>
+            <p class="my-2 my-lg-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit neque sed hic perferendis distinctio
+              quae ab possimus eos, consequatur, cumque voluptatem praesentium mollitia.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- horizontal scrollable cards -->
+  <div class="container-fluid px-5 "
+    style="background-color: whitesmoke;overflow-y: hidden; overflow-x: scroll; display: inline-flex;">
+    <div class="row mx-3 gap-3 d-flex flex-nowrap text-center  horizontal-cards">
+
+      <div class="card m-4 p-4 bg-dark text-white">
+        <h5 class="card-title my-lg-4">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+          content. This content is a little bit longer.</p>
+      </div>
+      <div class="card m-4 p-4 bg-warning text-white" style="opacity: 0.5;">
+        <h5 class="card-title my-lg-4 ">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+          content. This content is a little bit longer.</p>
+      </div>
+      <div class="card m-4 p-4 bg-warning text-white">
+        <h5 class="card-title my-lg-4 ">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+          content. This content is a little bit longer.</p>
+      </div>
+      <div class="card m-4 p-4 text-white" style="background-color: lightgray;">
+        <h5 class="card-title my-lg-4">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+          content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Read More text -->
+  <div class="container">
+    <div class="row">
+      <div class="col d-flex flex-column justify-content-center align-items-center" style="padding: 10%;">
+        <h3 class="mb-4">About Company</h3>
+        <p class="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti vitae quaerat suscipit cum
+          quidem repellendus voluptatibus debitis adipisci non laboriosam? Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Tempore, similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nemo?
+        </p>
+        <button class="btn btn-outline-dark">Read More</button>
+      </div>
+    </div>
+  </div>
+  <!-- Accordion -->
+  <div class="container-full">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 accordion-left-img ">
+      </div>
+      <div class="col-sm-12 col-md-6 p-5 bg-warning text-white">
+        <h3>Doing the right thing, at the right time</h3>
+        <div class="accordion " id="accordionExample">
+          <div class="accordion-item ">
+            <h2 class="accordion-header  " id="headingOne">
+              <button class="accordion-button bg-warning text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                WEBSITE & MOBILE DESIGN
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-warning text-white" style="border:none ;">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptatem totam eum laudantium
+                  expedita consequatur minus repellat, aperiam quam soluta maiores facilis, facere iste libero!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed bg-warning text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                BRANDING
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-warning text-white" style="border:none ;">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptatem totam eum laudantium
+                  expedita consequatur minus repellat, aperiam quam soluta maiores facilis, facere iste libero!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed bg-warning text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                MARKETING
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body bg-warning text-white" style="border:none ;">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero voluptatem totam eum laudantium
+                  expedita consequatur minus repellat, aperiam quam soluta maiores facilis, facere iste libero!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+  <!-- our services cards -->
+  <div class="container" style="padding: 10%;">
+    <div class="row my-5 align-items-center">
+      <h3 class="text-center">Our Services</h3>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col d-flex flex-column justify-content-center align-items-center text-center mb-4">
+        <img src="./assets/img/Group 2.png" alt="">
+        <h4 class="mb-3 mt-2">Development</h1>
+          <p style="font-size:small; font-weight:300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            accusantium earum quis nulla tempore, consequuntur vitae commodi dolorum molestiae deserunt, ratione
+            doloribus excepturi velit aliquam ipsam ex!</p>
+      </div>
+      <div class="col d-flex flex-column justify-content-center align-items-center text-center mb-4">
+        <img src="./assets/img/Group 2.png" alt="">
+        <h4 class="mb-3 mt-2">Development</h1>
+          <p style="font-size:small; font-weight:300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            accusantium earum quis nulla tempore, consequuntur vitae commodi dolorum molestiae deserunt, ratione
+            doloribus excepturi velit aliquam ipsam ex!</p>
+      </div>
+      <div class="col d-flex flex-column justify-content-center align-items-center text-center mb-4">
+        <img src="./assets/img/Group 2.png" alt="">
+        <h4 class="mb-3 mt-2">Development</h1>
+          <p style="font-size:small; font-weight:300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            accusantium earum quis nulla tempore, consequuntur vitae commodi dolorum molestiae deserunt, ratione
+            doloribus excepturi velit aliquam ipsam ex!</p>
+      </div>
+      <div class="col d-flex flex-column justify-content-center align-items-center text-center mb-4">
+        <img src="./assets/img/Group 2.png" alt="">
+        <h4 class="mb-3 mt-2">Development</h1>
+          <p style="font-size:small; font-weight:300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            accusantium earum quis nulla tempore, consequuntur vitae commodi dolorum molestiae deserunt, ratione
+            doloribus excepturi velit aliquam ipsam ex!</p>
+      </div>
+      <div class="col d-flex flex-column justify-content-center align-items-center text-center mb-4">
+        <img src="./assets/img/Group 2.png" alt="">
+        <h4 class="mb-3 mt-2">Development</h1>
+          <p style="font-size:small; font-weight:300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            accusantium earum quis nulla tempore, consequuntur vitae commodi dolorum molestiae deserunt, ratione
+            doloribus excepturi velit aliquam ipsam ex!</p>
+      </div>
+      <div class="col d-flex flex-column justify-content-center align-items-center text-center mb-4">
+        <img src="./assets/img/Group 2.png" alt="">
+        <h4 class="mb-3 mt-2">Development</h1>
+          <p style="font-size:small; font-weight:300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            accusantium earum quis nulla tempore, consequuntur vitae commodi dolorum molestiae deserunt, ratione
+            doloribus excepturi velit aliquam ipsam ex!</p>
+      </div>
+
+    </div>
+
+
+  </div>
+  <!-- carousel text -->
+  <div class="container-fluid" style="background-color:whitesmoke ; padding: 8%;">
+    <div class="container" style="padding: 5%;">
+      <div class="row">
+        <div class="col">
+          <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div id="info-carousel" class="carousel-inner">
+              <div class="carousel-item active">
+                <p class="info-carosel-text d-block w-100">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Vero cum asperiores
+                  velit
+                  magni harum culpa eos aliquam debitis quia dolorum ullam iure dolores, minus nam amet similique? Sed,
+                  veniam
+                  iusto neque ea consequuntur natus? Error, beatae! Iste maxime soluta cumque quod. Quidem nisi deserunt
+                  quaerat? Numquam id nostrum praesentium provident.</p>
+                <br>
+
+                <p> <strong>Lorem Ipsum</strong> </p>
+              </div>
+              <div class="carousel-item">
+                <p class="info-carosel-text d-block w-100">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Vero cum asperiores
+                  velit
+                  magni harum culpa eos aliquam debitis quia dolorum ullam iure dolores, minus nam amet similique? Sed,
+                  veniam
+                  iusto neque ea consequuntur natus? Error, beatae! Iste maxime soluta cumque quod. Quidem nisi deserunt
+                  quaerat? Numquam id nostrum praesentium provident.</p>
+
+                <br>
+                <p><strong>Lorem Ipsum</strong></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-3 info-carousel-right d-flex align-items-center justify-content-center">
+          <div class="d-flex flex-column align-items-center">
+            <h1>0</h1>
+            <button id="prevCt" class="carousel-control-prev mx-3  my-3  my-sm-4 my-lg-5" type="button"
+              data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev" style="position: relative;">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-arrow-left " viewBox="0 0 16 16"
+                style="position: absolute;">
+                <path fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+              </svg>
+            </button>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <h1 id="secondText">1</h1>
+            <button id="nextCt" class="carousel-control-next mx-3 my-3  my-sm-4 my-lg-5" type="button"
+              data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next" style="position: relative;">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="black" class="bi bi-arrow-right " viewBox="0 0 16 16"
+                style="position: absolute;">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- footer -->
+
+  <div class="container-fluid bg-dark text-white" style="padding-top:5%;padding-bottom:2%">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 my-3">
+          <div class="text-center">
+            <h5>Products</h5>
+            <ul class="d-flex flex-column align-items-center justify-content-center">
+              <li><a href="#">
+                  <p style="font-weight: 300 ; font-size:small">Lorem</p>
+                </a></li>
+              <li><a href="#">
+                  <p style="font-weight: 300 ; font-size:small">Lorem</p>
+                </a></li>
+              <li><a href="#">
+                  <p style="font-weight: 300 ; font-size:small">Lorem</p>
+                </a></li>
+              <li><a href="#">
+                  <p style="font-weight: 300 ; font-size:small">Lorem</p>
+                </a></li>
+              <li><a href="#">
+                  <p style="font-weight: 300 ; font-size:small">Lorem</p>
+                </a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-4 my-3">
+          <div class="text-center">
+            <h5>Contact Us</h5>
+            <p class="text-align-center" style="font-weight: 300 ; font-size:small">Lorem ipsum dolor sit
+              amet.<br>Lorem, ipsum dolor. <br>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 my-3">
+          <div class="text-center">
+            <h5>Website</h5>
+            <ul>
+              <li><a href="#">
+                  <p style="font-weight: 300 ; font-size:small">About Us</p>
+                </a></li>
+              <li><a href="#">
+                  <p style="font-weight: 300 ; font-size:small">Privacy Policy</p>
+                </a></li>
+              <li><a href="#">
+                  <p style="font-weight: 300 ; font-size:small">Sitemap</p>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-12 my-3">
+          <div class="text-center pt-3">
+            <img src="./assets/img/Group 102.png" alt="">
+            <img src="./assets/img/Group 99.png" alt="">
+            <img src="./assets/img/Vector-1.png" alt="">
+            <img src="./assets/img/Group 101.png" alt="">
+            <img src="./assets/img/Vector.png" alt="">
+            <p class="text-center pt-3" style="font-weight: 300 ; font-size:smaller">© 2022 Academia United</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./info-carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
